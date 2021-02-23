@@ -1,7 +1,10 @@
 :root{
-    --nav-color : RGBA(0,0,255,0.35);
+    --nav-color : rgba(61, 184, 108,0.5);
+    --current-color: rgb(61, 184, 108);
 }
-
+html{
+    font-size: 20px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -35,7 +38,9 @@ ul{
 ul li{
     list-style: none;
     padding:20px 0; 
-    
+    transition: transform 100ms ease-in-out,
+        color 100ms ease-in-out;
+    cursor:pointer;
 }
 .row-flex{
     display:flex;
@@ -44,25 +49,25 @@ ul li{
 
 
 .line{
-    width: 3px;
-    background: blue;
+    width: 5px;
+    background: var(--current-color);
     height: 100vh;
     align-items:center;
 }
 
 .circle{
-    width: 13px; 
-    height: 13px;
-    background :blue;
+    width: 15px; 
+    height: 15px;
+    background :var(--current-color);
     border-radius: 50%;
 }
 
 .current{
-    color: blue;
+    color: var(--current-color);
     font-size: 1.3rem;
 }
 
 ul li:hover{
-    transform: scale(1.2);
-    
+    transform: scale(1.1) translateX(8px);
+    color: var(--current-color);
 }
