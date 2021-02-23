@@ -1,9 +1,10 @@
+/* initializing */
 :root{
-    --nav-color : rgba(61, 184, 108,0.5);
+    --nav-color : rgba(61, 184, 108,0.4);
     --current-color: rgb(61, 184, 108);
 }
 html{
-    font-size: 20px;
+    font-size: 15px;
 }
 *{
     margin: 0;
@@ -16,6 +17,8 @@ body {
     font-family:sans-serif;
 }
 
+
+/* the navbar*/
 
 nav{
     height: 100vh ; 
@@ -41,6 +44,12 @@ ul li{
     transition: transform 100ms ease-in-out,
         color 100ms ease-in-out;
     cursor:pointer;
+    transform-origin: left;
+}
+ul li:hover{
+    transform: scale(1.1) ;
+    
+    color: var(--current-color);
 }
 .row-flex{
     display:flex;
@@ -49,25 +58,26 @@ ul li{
 
 
 .line{
-    width: 5px;
+    width: 3px;
     background: var(--current-color);
     height: 100vh;
     align-items:center;
 }
 
 .circle{
-    width: 15px; 
-    height: 15px;
+    width: 10px; 
+    height: 10px;
     background :var(--current-color);
     border-radius: 50%;
+    transition: transform 100ms ease-in-out
 }
 
 .current{
     color: var(--current-color);
-    font-size: 1.3rem;
+    transform:scale(1.4);
+}
+.current:hover{
+    transform: scale(1.4);
 }
 
-ul li:hover{
-    transform: scale(1.1) translateX(8px);
-    color: var(--current-color);
-}
+
