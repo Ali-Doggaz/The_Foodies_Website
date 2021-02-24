@@ -3,9 +3,8 @@ const myLis = document.querySelectorAll('nav ul li');
 const myCircles = document.querySelectorAll('nav .circle');
 const pageTable = [
     document.querySelector('.myMap'),
-    document.querySelector('.contactForm'),
-    document.querySelector('.aboutUs')];
-const [myMap,contactForm,aboutUs]=pageTable;
+    document.querySelector('#contact')];
+const [myMap,contactForm]=pageTable;
 
 //adding nav animation
 for(let i =0; i<myLis.length; i++){
@@ -26,7 +25,6 @@ for(let i =0; i<myLis.length; i++){
 for(let i=0; i<pageTable.length; i++){
     myLis[i].addEventListener('click',
         function(){
-            console.log(pageTable[i].getBoundingClientRect())
             window.scrollTo({
                 top: window.innerHeight*i,
                 behavior:"smooth"
