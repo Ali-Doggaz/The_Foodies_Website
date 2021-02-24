@@ -27,6 +27,10 @@ nav{
     display:flex; 
     justify-content: center; 
     align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    background : rgba(0, 0, 0, 0.082)
 }
 ul{
     height: 100vh;
@@ -49,7 +53,7 @@ ul li{
 ul li:hover{
     transform: scale(1.1) ;
     
-    color: var(--current-color);
+    color:  rgba(61, 184, 108,0.7);;
 }
 .row-flex{
     display:flex;
@@ -69,7 +73,7 @@ ul li:hover{
     height: 10px;
     background :var(--current-color);
     border-radius: 50%;
-    transition: transform 100ms ease-in-out
+    transition: transform 100ms ease-in-out;
 }
 
 .current{
@@ -78,6 +82,29 @@ ul li:hover{
 }
 .current:hover{
     transform: scale(1.4);
+    color: var(--current-color);
+;}
+
+/* myMap */
+
+.myMap{
+    background : rgb(228, 228, 228);
+    width: 100%;
+    height: 100vh;
 }
 
 
+/*contactForm*/
+
+.contactForm{
+    height: 100vh;
+    width: 100%;
+}
+
+
+/*aboutUs*/
+
+.aboutUs{
+    height: 100vh ;
+    background: rgba(0, 0, 0, 0.082)
+}
