@@ -12,7 +12,7 @@ const [myMap,contactForm, aboutUs]=pageTable;
 //deciding the the checks per second 
 
 const framePassed= function(callback){
-    window.setTimeout(callback,1000/60);
+    window.setTimeout(callback,1000/30);
 }
 
 
@@ -31,16 +31,16 @@ const changeCurrent = (i)=> {
 
 //adding nav animation
 for(let i =0; i<myLis.length; i++){
-    if(!myLis[i].classList.contains("current")){
-        myLis[i].addEventListener('mouseover',()=>{
-            myCircles[i].style.transform = "scale(1.5)"
-        })
-        myLis[i].addEventListener('mouseout',()=>{
-            myCircles[i].style.transform = "none"
-        })
-    }
+    myLis[i].addEventListener('mouseover',()=>{
+        myCircles[i].style.transform = "scale(1.5) "
+    })
+    myLis[i].addEventListener('mouseout',()=>{
+        myCircles[i].style.transform = "none"
+    })
     
 }
+
+
 
 //adding scroll animation
 for(let i=0; i<pageTable.length; i++){
@@ -54,13 +54,32 @@ for(let i=0; i<pageTable.length; i++){
         })
 }
 
+// myLis[0].addEventListener('click',()=>{
+//     window.scrollTo({
+//         top:0,
+//         behavior:'smooth'
+//     })
+// })
+
+// for(let i=1; i < pageTable.length; i++){
+//     let myTop= 0; 
+//     for(let j=0; j<i; j++){
+//         myTop += pageTable[j].getBoundingClientRect().height;
+//     }
+//     myLis[i].addEventListener('click',()=>{
+//         window.scrollTo({
+//             top:myTop,
+//             behavior:'smooth'
+//         })
+//     })
+// }
+
 //infinite loop function
 
 function settingNavBar(){
     const [myMapPosition,contactFormPosition,aboutUsPosition] = 
         pageTable.map(element=> element.getBoundingClientRect());
     
-    console.log(aboutUsPosition.top +" "+window.innerWidth/2);
     
     if(aboutUsPosition.top<=window.innerHeight/2){
 
