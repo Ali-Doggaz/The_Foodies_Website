@@ -43,36 +43,36 @@ for(let i =0; i<myLis.length; i++){
 
 
 //adding scroll animation
-for(let i=0; i<pageTable.length; i++){
-    myLis[i].addEventListener('click',
-        function(){
-            window.scrollTo({
-                top: window.innerHeight*i,
-                behavior:"smooth"
-            })
-            changeCurrent(i);
-        })
-}
-
-// myLis[0].addEventListener('click',()=>{
-//     window.scrollTo({
-//         top:0,
-//         behavior:'smooth'
-//     })
-// })
-
-// for(let i=1; i < pageTable.length; i++){
-//     let myTop= 0; 
-//     for(let j=0; j<i; j++){
-//         myTop += pageTable[j].getBoundingClientRect().height;
-//     }
-//     myLis[i].addEventListener('click',()=>{
-//         window.scrollTo({
-//             top:myTop,
-//             behavior:'smooth'
+// for(let i=0; i<pageTable.length; i++){
+//     myLis[i].addEventListener('click',
+//         function(){
+//             window.scrollTo({
+//                 top: window.innerHeight*i,
+//                 behavior:"smooth"
+//             })
+//             changeCurrent(i);
 //         })
-//     })
 // }
+
+myLis[0].addEventListener('click',()=>{
+    window.scrollTo({
+        top:0,
+        behavior:'smooth'
+    })
+})
+
+for(let i=1; i < pageTable.length; i++){
+    myLis[i].addEventListener('click',()=>{
+        let myTop= 0; 
+        for(let j=0; j<i; j++){
+            myTop += pageTable[j].getBoundingClientRect().height;
+        }
+        window.scrollTo({
+            top:myTop,
+            behavior:'smooth'
+        })
+    })
+}
 
 //infinite loop function
 
