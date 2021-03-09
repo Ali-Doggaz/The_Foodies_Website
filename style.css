@@ -20,6 +20,23 @@ body {
     position: relative;
 }
 
+::-webkit-scrollbar{
+    max-width:5px;
+    transition: width 5s ease-in-out;
+}
+::-webkit-scrollbar:hover {
+    max-width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:var(--myWhite);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--myGreen);
+}
+
+
 
 /* the navbar*/
 
