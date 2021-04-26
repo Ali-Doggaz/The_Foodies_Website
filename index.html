@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummyyy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slides_container">
+        <div class="slides">
+             <input type="radio" id="trigger1" name="slider" checked autofocus/>
+             <label for="trigger1"></label>
+
+             
+             <div class="slide  "> 
+                 <div class="hovereffect ">
+                 <div class="img1 img-responsive"></div>
+                 <div class="overlay">
+                    <h2 class="title">Pates au poireau et champignons</h2>
+                    
+                        <button id="myBtn">Receipt</button>
+                 </div>
+                             <!-- Modal  -->
+                 <div id="myModal" class="modal"> 
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <p>Some text in the Modal..</p>
+                    </div>
+                 </div>
+              
+                </div>
+             </div>
+           
+
+             <input type="radio" id="trigger2" name="slider"
+             />
+             <label for="trigger2"></label> 
+
+             <div class="slide img2">
+                <div class="hovereffect ">
+ 
+             <div class="overlay">
+                <h2 class="title">Pates au poireau et champignons</h2>
+                    <button id="myBtn">Open Modal</button>
+             </div>
+                         <!-- Modal  -->
+             <div id="myModal" class="modal"> 
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>Some text in the Modal..</p>
+                </div>
+             </div></div>
+            </div>
+            
+             <input type="radio" id="trigger3" name="slider"
+           />
+           
+             <label for="trigger3"></label>
+             <div class="slide img3"> </div>
+
+             <!-- <input type="radio" id="trigger4" name="slider"
+             checked autofocus/> -->
+               <!-- <label for="trigger4"></label> -->
+                <div class="slide img4"></div>
+  
+
+        </div>
+    </div>
+    <script src="modal.js"></script>
+</body>
+</html>
