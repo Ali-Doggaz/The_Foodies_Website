@@ -76,7 +76,6 @@ input:checked + label + .slide {
     transform: translateX(-100%);
     transition-duration: 0.9s;
     opacity: 1;
-    background-image: url(backgrounds/italy1.jpg);
    
 }
 
