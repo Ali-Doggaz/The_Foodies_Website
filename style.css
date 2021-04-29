@@ -100,7 +100,17 @@ input:checked + label + .slide {
    
 
 }
-
+.green {
+  color: rgb(180, 255, 180);
+  width: 50px;
+  height: 100%;
+}
+.red {
+  color: rgb(253, 169, 169);
+}
+.white {
+  color: white;
+}
 .hovereffect {
     width: 100%;
     height: 100%;
@@ -141,6 +151,21 @@ opacity: 1;
   @font-face {
     font-family: Tomatoes;
     src: url(Panterick\ [Demo\ Version].ttf);
+  }
+  @font-face {
+    font-family: futura;
+    src: url(OpenSans-LightItalic.ttf);
+  }
+  
+  .smalltitle {
+    font-family: Tomatoes ;
+    position: relative;
+    font-size: 70px;
+    top: 0px;
+    bottom: 0px;
+    margin: 10px;
+    font-weight: 100  ;
+    color: rgb(0, 0, 0);
   }
   .hovereffect .title {
     font-family: Tomatoes ;
@@ -194,6 +219,7 @@ opacity: 1;
 
 
   .modal {
+    
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -209,11 +235,12 @@ opacity: 1;
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #fefefe;
+    background-color: #ffffff;
+    font-family: futura;
     margin: 3% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 50% /* Could be more or less, depending on screen size */
+    width: 40% /* Could be more or less, depending on screen size */
   }
   
   /* The Close Button */
@@ -233,3 +260,32 @@ opacity: 1;
   .overlay:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
+  .fade {
+    width: 100%;
+    margin: auto;
+    background-image: linear-gradient(
+      transparent 12%, currentColor 30% , currentColor 70% ,
+      transparent 888%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-attachment: fixed;
+  }
+  .fade p {
+    color: transparent;
+  }
+  h1.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    
+    padding:0 px;
+  
+  }
+  p,h2{
+    text-align: center;
+    padding: 0;
+margin: 10;
+font-weight: 100;
+  }
+  
