@@ -2,9 +2,9 @@ body,html {
     padding :0 ;
     margin :0 ;
     width :100%;
-    height :100%;
+    height :90%;
     text-align: center;
-    overflow : hidden;
+    /* overflow-x : hidden; */
 }
 
 input{
@@ -115,7 +115,7 @@ input:checked + label + .slide {
     width: 100%;
     height: 100%;
     float: left;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     text-align: center;
     cursor: default;
@@ -125,7 +125,7 @@ input:checked + label + .slide {
     width: 100%;
     height: 100%;
     position: absolute;
-    overflow: hidden;
+    /* overflow: hidden; */
     top: 0;
     left: 0;
   }
@@ -215,9 +215,22 @@ opacity: 1;
     box-shadow: 0 0 5px #fff;
   }
   
- 
+ .p{ background-color: black;}
+.like {position: absolute;
+  top: 300px;
+  right: 100px;
+  background-color: #fff;
+  border-right: 20px;
+  padding: 50px;
 
-
+}
+.ingred {
+position: absolute;
+left: 100px;
+background-color: #fff;
+border-right: 20px;
+padding: 10px;
+}
   .modal {
     
     display: none; /* Hidden by default */
@@ -226,6 +239,7 @@ opacity: 1;
     left: 0;
     position: absolute;
     top: 0;
+    opacity: 4;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
@@ -239,6 +253,7 @@ opacity: 1;
     font-family: futura;
     margin: 3% auto; /* 15% from the top and centered */
     padding: 20px;
+    opacity: 1;
     border: 1px solid #888;
     width: 40% /* Could be more or less, depending on screen size */
   }
@@ -271,9 +286,7 @@ opacity: 1;
     -webkit-background-clip: text;
     background-attachment: fixed;
   }
-  .fade p {
-    color: transparent;
-  }
+
   h1.sticky {
     position: -webkit-sticky;
     position: sticky;
@@ -287,5 +300,30 @@ opacity: 1;
     padding: 0;
 margin: 10;
 font-weight: 100;
+  }
+  
+  /* --------------------------Second carousel-------------------------------*/
+  div .slide2 {
+    position: absolute;
+    background-position: center;
+   background-size: cover;
+    background-repeat: no-repeat;
+    width: 50% ;
+    height: 100%;
+    top: 110%;
+ background-color: rgb(0, 0, 0);
+    opacity: 1;
+    /* background-image: url(pics/pic7.jpg); */
+  }
+  .imgg1 {
+    background-image: url(pics/pic7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
   }
   
