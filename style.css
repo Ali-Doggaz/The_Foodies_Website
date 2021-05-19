@@ -115,7 +115,7 @@ input:checked + label + .slide {
     width: 100%;
     height: 100%;
     float: left;
-    /* overflow: hidden; */
+    overflow: hidden; 
     position: relative;
     text-align: center;
     cursor: default;
@@ -125,7 +125,7 @@ input:checked + label + .slide {
     width: 100%;
     height: 100%;
     position: absolute;
-    /* overflow: hidden; */
+    overflow: hidden; 
     top: 0;
     left: 0;
   }
@@ -326,4 +326,32 @@ font-weight: 100;
     left: 0;
     z-index: 0;
   }
-  
+  .svg {
+    right: 50px;
+    text-align: center;
+    top: 20px;
+    position: absolute;
+    z-index: 9999;
+  }
+  #right-arm {
+    animation: arm 1s infinite ease-in-out alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+    
+    }
+    #leaf1 {
+        animation: arm 2s infinite ease-in-out alternate;
+        transform-origin: bottom;
+        transform-box: fill-box;
+      
+        }
+        
+    
+    @keyframes arm {
+        from {
+            transform: rotate(20deg);
+        }
+        to {
+            transform: rotate(0deg);
+        }
+    }
