@@ -1,0 +1,2 @@
+welcome = document.querySelector("#svg");
+
