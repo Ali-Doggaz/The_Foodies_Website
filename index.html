@@ -20,11 +20,12 @@
         <div class="hovereffect ">
           <div class="img1 img-responsive"></div>
           <div class="overlay">
-            <h2 class="title">Pates au poireau et champignons</h2>
+            <h2 class="title">Crepes</h2>
 
-            <button id="myBtn" href="myModal1">Receipt</button>
+            <button id="myBtn" href="myModal1">Show Recipe</button><br>
+
           </div>
-          <!-- Modal  -->
+          
 
         </div>
 
@@ -42,7 +43,7 @@
             <h2 class="title">Pates au poireau et champignons</h2>
             <button id="myBtn" href="myModal2">Open Modal</button>
           </div>
-          <!-- Modal  -->
+
         </div>
       </div>
 
@@ -75,63 +76,115 @@
 
 
       <!-- PUT MODALS HERE -->
+      <div id="init-modal" class="modal">
+        <div class="modal-content">
+          <ol>
+            <li></li>
+          </ol>
+          <span class="close">&times;</span>
+        </div>
+      </div>
 
 
 
       <div id="myModal1" class="modal">
         <div class="modal-content">
-          <span class="close">&times;</span>
-          <p>Some text in the Modal.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequatur
-            deleniti, ipsa ratione, suscipit eum facere expedita assumenda doloremque id, accusamus sunt magni
-            exercitationem aliquid amet tempore illum est iure. Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Officia reprehenderit qui ab sit incidunt, voluptates a iure deserunt labore voluptate aliquam nulla
-            id nisi reiciendis vel eius nobis harum molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quis vitae similique magni earum doloribus commodi porro tenetur quaerat. Placeat illo ipsam voluptatum
-            repellendus pariatur tempore id cumque aut praesentium quaerat. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Culpa, quibusdam quo animi corporis quis suscipit dolores vitae a minus placeat non dolore
-            in, provident velit minima dolor tenetur itaque illum! Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Neque laudantium accusamus commodi. Ducimus tempore inventore reiciendis dolores ea qui minima
-            sapiente beatae in libero. Quia eveniet nisi delectus eaque soluta? Some text in the Modal.. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Quam consequatur deleniti, ipsa ratione, suscipit eum facere
-            expedita assumenda doloremque id, accusamus sunt magni exercitationem aliquid amet tempore illum est iure.
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia reprehenderit qui ab sit incidunt,
-            voluptates a iure deserunt labore voluptate aliquam nulla id nisi reiciendis vel eius nobis harum molestias!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vitae similique magni earum doloribus commodi
-            porro tenetur quaerat. Placeat illo ipsam voluptatum repellendus pariatur tempore id cumque aut praesentium
-            quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quibusdam quo animi corporis quis
-            suscipit dolores vitae a minus placeat non dolore in, provident velit minima dolor tenetur itaque illum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque laudantium accusamus commodi. Ducimus tempore
-            inventore reiciendis dolores ea qui minima sapiente beatae in libero. Quia eveniet nisi delectus eaque
-            soluta? Some text in the Modal.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequatur
-            deleniti, ipsa ratione, suscipit eum facere expedita assumenda doloremque id, accusamus sunt magni
-            exercitationem aliquid amet tempore illum est iure. Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Officia reprehenderit qui ab sit incidunt, voluptates a iure deserunt labore voluptate aliquam nulla
-            id nisi reiciendis vel eius nobis harum molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quis vitae similique magni earum doloribus commodi porro tenetur quaerat. Placeat illo ipsam voluptatum
-            repellendus pariatur tempore id cumque aut praesentium quaerat. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Culpa, quibusdam quo animi corporis quis suscipit dolores vitae a minus placeat non dolore
-            in, provident velit minima dolor tenetur itaque illum! Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Neque laudantium accusamus commodi. Ducimus tempore inventore reiciendis dolores ea qui minima
-            sapiente beatae in libero. Quia eveniet nisi delectus eaque soluta?</p>
+          <div class="row">
+            <div class="column">
+              <div class="ingrediant-container">
+                <h2 class="modal-title">INGREDIANTS</h2>
+
+                <table style="width: 100%;">
+                  <th>Ingrediant</th>
+                  <th>Quantity</th>
+                  <tr>
+                    <td>Milk</td>
+                    <td>360 ml</td>
+                  </tr>
+                  <tr>
+                    <td>Brown Sugar</td>
+                    <td>55 grams</td>
+                  </tr>
+                  <tr>
+                    <td>Active Drive Yeast</td>
+                    <td>3.25 teaspoons</td>
+                  </tr>
+                  <tr>
+                    <td>Flour</td>
+                    <td>400 grams (or more)</td>
+                  </tr>
+                  <tr>
+                    <td>Salt</td>
+                    <td>A pinch</td>
+                  </tr>
+                  <tr>
+                    <td>Unsalted Butter</td>
+                    <td>340 ml</td>
+                  </tr>
+                  <tr>
+                    <td>Egg</td>
+                    <td>1 whole</td>
+                  </tr>
+                </table>
+
+              </div>
+            </div>
+            <div class="column">
+              <div class="ingrediant-container">
+                <h2 class="modal-title">NUTRITIONAL VALUE</h2>
+                <table style="width: 100%;">
+                  <tr>
+                    <td>Serving Size</td>
+                    <td>1 meduim Croissant</td>
+                  </tr>
+                  <tr>
+                    <td>Calories</td>
+                    <td>230 Kcal</td>
+                  </tr>
+                  <tr>
+                    <td>Fat</td>
+                    <td>12 grams</td>
+                  </tr>
+                  <tr>
+                    <td>Carbohydrate</td>
+                    <td>26 grams</td>
+                  </tr>
+                  <tr>
+                    <td>Protein</td>
+                    <td>4.7 grams</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div>
+            <H1 class="modal-title">Directions</H1>
+          </div>
+
+
         </div>
-      </div>
-      <div id="myModal2" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
-        </div>
-      </div>
-      <div class="modal" id="myModal3">
-        <div class="modal-content"><span class="close">&times;</span>
-          <p>third modal</p>
-        </div>
-      </div>
-      <div class="modal" id="myModal4">
-        <div class="modal-content"><span class="close">&times;</span>
-          <p>forth modal</p>
-        </div>
+
+        <span class="close">&times;</span>
+
       </div>
     </div>
+    <div id="myModal2" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+    </div>
+    <div class="modal" id="myModal3">
+      <div class="modal-content"><span class="close">&times;</span>
+        <p>third modal</p>
+      </div>
+    </div>
+    <div class="modal" id="myModal4">
+      <div class="modal-content"><span class="close">&times;</span>
+        <p>forth modal</p>
+      </div>
+    </div>
+  </div>
   </div>
   <script src="modal.js"></script>
 </body>

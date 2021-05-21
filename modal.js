@@ -4,6 +4,11 @@ var tbtn = document.querySelectorAll("#myBtn");
 
 // Get the <span> element that closes the modal
 var tspan = document.querySelectorAll(".close");
+var ini =document.getElementById("init-modal");
+
+
+//make the first modal be always visible
+ini.style.display="block";
 
 
 

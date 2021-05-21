@@ -78,25 +78,50 @@ input:checked + label + .slide {
     opacity: 1;
    
 }
+.modal-title
+{
+  font-family: Papyrus,fantasy;
+}
 
 
+.ingrediant-container{
+  float: left;
+  width: 40%;
+  border: rgba(0, 0, 0, 0.76)  2px;
+  border-style: none groove groove none ;
+  
+}
+.row:after
+{
+  width: 60%;
+  content: "";
+  display: table;
+  clear: both;
+  padding: 10px;
+}
+.ingrediant{
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.205);
+  background-color: rgba(170, 170, 170, 0.281);
+  display: block;
+  width: 80%;
+}
 
 .img1{
-    background-image: url(pics/pic4.jpg);
+    background-image: url(pics/pic1.jpg);
  
 }
-.img2{
-    background-image: url(pics/pic3.jpg);
+.img4{
+    background-image: url(pics/pic2.jpg);
     
 
 }
 .img3{
-    background-image: url(pics/pic5.jpg);
+    background-image: url(pics/testcroissant.jpg);
    
 
 }
-.img4{
-    background-image: url(pics/pic7.jpg);
+.img2{
+    background-image: url(pics/pic10.jpg);
    
 
 }
@@ -213,7 +238,8 @@ opacity: 1;
     margin: 3% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 50% /* Could be more or less, depending on screen size */
+    width: 50% ;/* Could be more or less, depending on screen size */
+    font-family: Georgia,serif;
   }
   
   /* The Close Button */
