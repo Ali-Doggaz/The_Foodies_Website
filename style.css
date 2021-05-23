@@ -1,10 +1,9 @@
 body,html {
     padding :0 ;
     margin :0 ;
-    width :100%;
-    height :100%;
     text-align: center;
-    overflow : hidden;
+    overflow-x : hidden;
+    background-color: black;
 }
 
 input{
@@ -20,6 +19,79 @@ button {
 }
 .hovereffect:hover button{
   opacity: 1;
+}
+
+#tree ,#leafs1
+{
+    
+    animation: treemove 5s ease alternate infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+
+
+}
+#eiffel
+{
+    animation: eiffelmove 3s infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes treemove {
+    from {
+        transform: rotateZ(0deg)
+    }
+    to {
+        transform: rotateZ(7deg);
+    }
+    
+}
+@keyframes eiffelmove {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to
+    {
+        transform: rotateZ(0.2deg);
+    }
+    
+}
+
+.svg {
+  position: absolute;
+  z-index: 5;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50% ); 
+}
+#svg{
+  animation: show 2s ease-in-out  ;
+  opacity: 0;  
+
+}
+@keyframes show{
+  50%{
+    opacity:1;
+  }
+  90%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+    display: none;
+  }
+}
+.overlay-welcome{
+
+  
+  animation: showOverlay 1s ease-in-out forwards 1s;
+  opacity: 0 ; 
+  z-index: 3000;
+}
+@keyframes showOverlay {
+  100% { opacity :1}
+  
 }
 label {
     position: relative;
@@ -62,6 +134,10 @@ input:checked + label + .slide {
     top :0;
     left : 0;
     z-index: 0;   
+}
+.img5
+{
+  background-color: #888;
 }
 .slide{
   position: absolute;

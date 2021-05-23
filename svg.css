@@ -1,0 +1,36 @@
+
+#tree ,#leafs1
+{
+    
+    animation: treemove 5s ease alternate infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+
+
+}
+#eiffel
+{
+    animation: eiffelmove 3s infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes treemove {
+    from {
+        transform: rotateZ(0deg)
+    }
+    to {
+        transform: rotateZ(7deg);
+    }
+    
+}
+@keyframes eiffelmove {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to
+    {
+        transform: rotateZ(0.2deg);
+    }
+    
+}

@@ -4,12 +4,10 @@ var tbtn = document.querySelectorAll("#myBtn");
 
 // Get the <span> element that closes the modal
 var tspan = document.querySelectorAll(".close");
-var ini =document.getElementById("init-modal");
+var modal =document.getElementById("init-modal");
 
-
-//make the first modal be always visible
-ini.style.display="block";
-
+// make first modal come after delay
+setTimeout(()=>{modal.style.display="block";},3000);
 
 
 // When the user clicks on the button, open the modal
