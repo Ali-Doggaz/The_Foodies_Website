@@ -59,7 +59,7 @@ button {
 
 .svg {
   position: absolute;
-  z-index: 5;
+  z-index: 99999;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50% ); 
@@ -78,13 +78,11 @@ button {
   }
 
   100%{
-    opacity: 0;
+    
     display: none;
   }
 }
 .overlay-welcome{
-
-  
   animation: showOverlay 1s ease-in-out forwards 1s;
   opacity: 0 ; 
   z-index: 3000;
